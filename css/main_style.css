@@ -7,6 +7,7 @@ canvas {
     background-color: rgb(18, 193, 137);
     /* 根据实际script.js效果调整背景色 */
     position: relative;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 canvas {
@@ -37,21 +38,21 @@ canvas {
     display: flex;
     flex-direction: column;
     /* 垂直布局 */
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.4);
     /* 轻磨砂效果 */
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 20px;
     box-sizing: border-box;
     z-index: 2;
     position: relative;
-    top: 0;
+    top: 5px;
     /* 顶格 */
     left: 0;
     /* 左对齐 */
     right: 0;
     /* 右对齐 */
-    bottom: 0;
+    bottom: 5px;
     /* 底格 */
     margin: auto;
     /* 自动居中 */
@@ -86,10 +87,12 @@ h2 {
     /* 与上方内容的间距 */
 }
 
-.description,
+.description p,
 .experiences {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 8%;
+    margin-right: 8%;
+    font-size: 18px;
+    line-height: 1.3;
 }
 
 .profile-picture {
@@ -166,15 +169,22 @@ h1,
 }
 
 a {
-    color: #f3cbda;
+    color: #ffd6e5;
     /* 超链接颜色 */
     text-decoration: none;
     /* 取消下划线 */
 }
 
 a:hover {
-    color: #004d40;
+    color: #ffffff;
     /* 鼠标悬停时的颜色，使用更深的薄荷绿 */
     text-decoration: underline;
     /* 悬停时添加下划线，增加可识别度 */
+}
+
+b {
+    color: #12dab9;
+    /* 超链接颜色 */
+    text-decoration: none;
+    /* 取消下划线 */
 }
