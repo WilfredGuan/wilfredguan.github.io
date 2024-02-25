@@ -1,0 +1,180 @@
+body,
+canvas {
+    margin: 0;
+    overflow-y: visible;
+    overflow-x: hidden;
+    height: auto;
+    background-color: rgb(18, 193, 137);
+    /* 根据实际script.js效果调整背景色 */
+    position: relative;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    /* 确保canvas在最底层 */
+}
+
+.language-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+    /* 保证语言切换链接在最上层 */
+}
+
+.language-switcher a {
+    color: white;
+    /* 在深色背景上更清晰 */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.glass-panel {
+    display: flex;
+    flex-direction: column;
+    /* 垂直布局 */
+    background: rgba(0, 0, 0, 0.1);
+    /* 轻磨砂效果 */
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 2;
+    position: relative;
+    top: 0;
+    /* 顶格 */
+    left: 0;
+    /* 左对齐 */
+    right: 0;
+    /* 右对齐 */
+    bottom: 0;
+    /* 底格 */
+    margin: auto;
+    /* 自动居中 */
+    width: 80%;
+    /* 自动宽度 */
+    max-width: none;
+    /* 移除最大宽度限制 */
+    height: auto;
+    /* 自动高度 */
+    justify-content: center;
+    /* 子项居中 */
+    align-items: flex-start;
+    /* 子项居中 */
+    text-align: left;
+    /* 文字居中 */
+    color: white;
+    /* 文字颜色为白色 */
+    padding: 40px;
+}
+
+.profile-picture,
+h1,
+.description,
+.experiences {
+    z-index: 2;
+    /* 内容在canvas之上 */
+}
+
+h2 {
+    margin-left: 5%;
+    margin-right: 5%;
+    /* 与上方内容的间距 */
+}
+
+.description,
+.experiences {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.profile-picture {
+    width: 100px;
+    /* 根据需要调整大小 */
+    height: 100px;
+    /* 保持宽高一致，形成圆形头像 */
+    object-fit: cover;
+    /* 确保图片不失真 */
+    border-radius: 50%;
+    /* 形成圆形 */
+    margin-right: 20px;
+    /* 图片和姓名之间的间距 */
+    border: 4px solid #004d40;
+    /* 薄荷绿边框，保持不变 */
+}
+
+h1,
+.description {
+    margin-bottom: 20px;
+}
+
+.experiences li {
+    list-style-type: none;
+    /* 去除列表标记 */
+    margin-bottom: 10px;
+    /* 列表项间距 */
+}
+
+@media (max-width: 600px) {
+    .glass-panel {
+        padding: 10px;
+    }
+
+    .language-switcher a {
+        font-size: 14px;
+    }
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    /* 确保图片和文本垂直居中对齐 */
+    margin-bottom: 20px;
+    /* 与下方正文内容的间距 */
+}
+
+.profile-info h1,
+.profile-info p {
+    margin: 0;
+    /* 移除默认的margin */
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* 根据实际情况调整间距 */
+}
+
+.email,
+.github,
+.linkedin {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    /* 在图标和文本之间添加一些间隙 */
+}
+
+a {
+    color: #f3cbda;
+    /* 超链接颜色 */
+    text-decoration: none;
+    /* 取消下划线 */
+}
+
+a:hover {
+    color: #004d40;
+    /* 鼠标悬停时的颜色，使用更深的薄荷绿 */
+    text-decoration: underline;
+    /* 悬停时添加下划线，增加可识别度 */
+}
