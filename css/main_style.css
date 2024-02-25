@@ -122,16 +122,6 @@ h1,
     /* 列表项间距 */
 }
 
-@media (max-width: 600px) {
-    .glass-panel {
-        padding: 10px;
-    }
-
-    .language-switcher a {
-        font-size: 14px;
-    }
-}
-
 .profile-header {
     display: flex;
     align-items: center;
@@ -183,8 +173,50 @@ a:hover {
 }
 
 b {
-    color: #18c3b2;
+    color: #1ddcc9;
+    /* color: #1ddcc9 */
     /* 超链接颜色 */
     text-decoration: none;
     /* 取消下划线 */
+}
+
+@media (max-width: 800px) {
+    .glass-panel {
+        padding: 10px;
+    }
+
+    .language-switcher a {
+        font-size: 14px;
+    }
+
+    .profile-picture {
+        margin-bottom: 15px;
+    }
+
+    .profile-name {
+        font-size: 25px;
+    }
+
+    .profile-info h1,
+    .profile-info p {
+        line-height: 1.5;
+    }
+
+    .profile-header {
+        display: flex;
+        flex-direction: column;
+        /* 在较窄屏幕上垂直排列 */
+        align-items: flex-start;
+        /* 在较窄屏幕上左对齐 */
+        margin-top: 5%;
+        margin-left: 8%;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        /* 在较窄屏幕上垂直排列 */
+        align-items: flex-start;
+        /* 在较窄屏幕上左对齐 */
+    }
 }
