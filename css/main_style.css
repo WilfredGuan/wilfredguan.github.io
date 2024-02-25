@@ -38,7 +38,7 @@ canvas {
     display: flex;
     flex-direction: column;
     /* 垂直布局 */
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.35);
     /* 轻磨砂效果 */
     backdrop-filter: blur(10px);
     border-radius: 15px;
@@ -106,7 +106,7 @@ h2 {
     /* 形成圆形 */
     margin-right: 20px;
     /* 图片和姓名之间的间距 */
-    border: 4px solid #004d40;
+    border: 4px solid #12b298;
     /* 薄荷绿边框，保持不变 */
 }
 
