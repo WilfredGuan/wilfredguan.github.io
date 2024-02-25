@@ -31,7 +31,7 @@ canvas {
 }
 
 .language-switcher a {
-    color: white;
+    color: rgba(255, 255, 255, 0.907);
     /* 在深色背景上更清晰 */
     text-decoration: none;
     font-size: 16px;
@@ -112,18 +112,6 @@ h2 {
     /* 薄荷绿边框，保持不变 */
 }
 
-h1,
-.description {
-    margin-bottom: 20px;
-}
-
-.experiences li {
-    list-style-type: none;
-    /* 去除列表标记 */
-    margin-bottom: 10px;
-    /* 列表项间距 */
-}
-
 .profile-header {
     display: flex;
     align-items: center;
@@ -158,6 +146,23 @@ h1,
     height: 24px;
     margin-right: 10px;
     /* 在图标和文本之间添加一些间隙 */
+}
+
+h1,
+.description {
+    margin-bottom: 20px;
+}
+
+.experiences li {
+    list-style-type: none;
+    /* 去除列表标记 */
+    margin-bottom: 10px;
+    /* 列表项间距 */
+}
+
+.description,
+.experiences {
+    text-align: justify;
 }
 
 a {
