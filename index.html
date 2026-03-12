@@ -1,75 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+title: Home
+---
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main_style.css">
-    <title>Profile Page</title>
-</head>
+<!-- ── Profile ── -->
+<section class="profile">
+  <!--
+    To add your photo:
+    1. Place your image in assets/images/ (e.g., assets/images/photo.jpg)
+    2. Comment out the placeholder below and uncomment the <img> tag
+  -->
+  <!-- <img src="{{ '/assets/images/photo.jpg' | relative_url }}" alt="Your Name" class="profile-photo"> -->
+  <div class="profile-photo-placeholder">your<br>photo</div>
 
-<body>
-    <canvas id="canvas"></canvas>
-    <div class="glass-panel">
+  <div class="profile-name">Your Name</div>
+  <div class="profile-tagline">Your current role or one-line description</div>
 
-        <div class="language-switcher">
-            <a href="index_zh.html">中文</a> | <a href="index.html">English</a>
-        </div>
+  <ul class="contact-list">
+    <li><a href="mailto:you@example.com">you@example.com</a></li>
+    <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></li>
+    <li><a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a></li>
+    <li>City, Country</li>
+  </ul>
+</section>
 
-        <div class="profile-header">
-            <img src="image/my_image.jpg" alt="Kaiyuan Guan" class="profile-picture">
-            <div class="profile-info">
-                <h1 class="profile-name">Kaiyuan Guan</h1>
-                <div class="contact-info">
-                    <div class="email">
-                        <img src="image/mail.svg" alt="Email Logo" class="logo">
-                        <a href="mailto:kaiyuan.guan@yale.edu">kaiyuan.guan@yale.edu</a>
-                    </div>
-                    <div class="github">
-                        <img src="image/github-fill.svg" alt="GitHub Logo" class="logo">
-                        <a href="https://github.com/WilfredGuan" target="_blank">WilfredGuan</a>
-                    </div>
-                    <div class="linkedin">
-                        <img src="image/linkedin.svg" alt="LinkedIn Logo" class="logo">
-                        <a href="https://www.linkedin.com/in/g-wilfred/" target="_blank">Kaiyuan
-                            Guan</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- ── About ── -->
+<section class="section">
+  <h2 class="section-label">About</h2>
+  <p>
+    A short paragraph about yourself — what you do, what you care about,
+    and what you're currently working on.
+  </p>
+</section>
 
-        <div class="description">
-            <p>Hi all. </p>
+<!-- ── Education ── -->
+<section class="section">
+  <h2 class="section-label">Education</h2>
+  <ul class="timeline">
 
-            <p>I am Kaiyuan Guan, a MSCS student at <a href="https://www.yale.edu/" target="_blank">Yale University</a>.
-            </p>
-
-            <p>I am a junior researcher at <a href="https://yale-nlp.github.io/" target="_blank">Yale NLP</a> lab,
-                advised
-                by <a href="https://armancohan.com/" target="_blank">Prof. Arman Cohan</a>.
-                I am also working with <a href="https://bigaidream.github.io/">Jie Fu</a> at <a
-                    href="https://hkust.edu.hk/">HKUST</a>.
-                My research interests mainly fall into <b>interpretability</b>, <b>robustness</b>, and
-                <b>evaluation</b> of <b>LLMs</b> (Large Language Models).
-            </p>
-
-            <p>Previously, I obtained a B.A. in English Literature and Linguistics and a B.Eng. in Computer Science at
-                <a href="https://en.uestc.edu.cn/">UESTC</a>.
-            </p>
-
-            <p>In my free time, I write Chinese modern poems, play the electric guitar, and compose music with
-                SuperCollider.
-            </p>
-        </div>
-
-        <h2>Main Experiences</h2>
-        <ul class="experiences">
-            <li>Experience 1</li>
-            <li>Experience 2</li>
-            <li>Experience 3</li>
+    <li class="timeline-item">
+      <div class="timeline-role">B.S. in Your Field</div>
+      <div class="timeline-org">University Name</div>
+      <div class="timeline-meta">2016 – 2020 · City, Country</div>
+      <div class="timeline-body">
+        <ul>
+          <li>Thesis or specialization</li>
+          <li>Notable coursework or honors</li>
         </ul>
-    </div>
-    <script src="js/main_script.js"></script>
-</body>
+      </div>
+    </li>
 
-</html>
+  </ul>
+</section>
+
+<!-- ── Experience ── -->
+<section class="section">
+  <h2 class="section-label">Experience</h2>
+  <ul class="timeline">
+
+    <li class="timeline-item">
+      <div class="timeline-role">Senior Software Engineer</div>
+      <div class="timeline-org">Company Name</div>
+      <div class="timeline-meta">Jan 2023 – Present · Full-time</div>
+      <div class="timeline-body">
+        <ul>
+          <li>What you built and the impact it had</li>
+          <li>Scale or scope (e.g., serving X users)</li>
+          <li>Key technologies or methods</li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="timeline-item">
+      <div class="timeline-role">Software Engineer</div>
+      <div class="timeline-org">Previous Company</div>
+      <div class="timeline-meta">Jun 2020 – Dec 2022 · Full-time</div>
+      <div class="timeline-body">
+        <ul>
+          <li>What you built and the impact it had</li>
+          <li>Scale or scope</li>
+        </ul>
+      </div>
+    </li>
+
+  </ul>
+</section>

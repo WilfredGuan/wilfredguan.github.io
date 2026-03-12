@@ -1,0 +1,21 @@
+---
+layout: default
+title: Tech Artifacts
+---
+
+<h1 class="page-title">Tech Artifacts</h1>
+
+{% assign sorted = site.tech_artifacts | sort: 'date' | reverse %}
+
+{% if sorted.size == 0 %}
+  <p class="empty-note">No artifacts yet.</p>
+{% else %}
+  <ul class="content-list">
+    {% for item in sorted %}
+    <li class="content-item">
+      <span class="item-date">{{ item.date | date: "%Y-%m-%d" }}</span>
+      <a href="{{ item.url | relative_url }}" class="item-title">{{ item.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+{% endif %}

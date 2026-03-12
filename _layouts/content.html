@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+{% if page.collection == 'tech_artifacts' %}
+  {% assign back_url = '/tech-artifacts/' %}
+  {% assign back_label = 'Tech Artifacts' %}
+{% else %}
+  {% assign back_url = '/poems/' %}
+  {% assign back_label = 'Poems' %}
+{% endif %}
+
+<a href="{{ back_url | relative_url }}" class="back-link">← {{ back_label }}</a>
+
+<div class="content-header">
+  <h1>{{ page.title }}</h1>
+  {% if page.date %}
+  <div class="content-date">{{ page.date | date: "%B %d, %Y" }}</div>
+  {% endif %}
+</div>
+
+<div class="content-body">
+  {{ content }}
+</div>

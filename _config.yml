@@ -1,0 +1,33 @@
+title: Your Name
+description: Personal Site
+baseurl: ""
+url: ""
+
+# Collections
+collections:
+  poems:
+    output: true
+    permalink: /poems/:name/
+  tech_artifacts:
+    output: true
+    permalink: /tech-artifacts/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "poems"
+    values:
+      layout: "content"
+  - scope:
+      path: ""
+      type: "tech_artifacts"
+    values:
+      layout: "content"
+
+plugins:
+  - jekyll-feed
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

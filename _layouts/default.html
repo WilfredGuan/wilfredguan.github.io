@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title and page.title != "Home" %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <div class="container">
+      {% include nav.html %}
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      {{ content }}
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© {{ site.time | date: "%Y" }} {{ site.title }}</p>
+    </div>
+  </footer>
+
+  <!--
+    GoatCounter Analytics
+    1. Sign up for free at https://www.goatcounter.com/
+    2. Replace YOUR_CODE with your site code
+    3. Uncomment the script tag below
+  -->
+  <!-- <script data-goatcounter="https://YOUR_CODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> -->
+</body>
+</html>
