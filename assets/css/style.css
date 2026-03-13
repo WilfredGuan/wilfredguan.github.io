@@ -11,7 +11,7 @@
   --bg-surface:  #161616;
   --text:        #e0e0e0;
   --text-muted:  #888;
-  --text-dim:    #4a4a4a;
+  --text-dim:    #656565;
   --accent:      #7eb8f7;
   --border:      #252525;
   --max-width:   680px;
@@ -304,15 +304,6 @@ a:hover {
 .item-title:hover {
   color: var(--accent);
   text-decoration: none;
-}
-
-.category-title {
-  font-size: 0.7rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--text-dim);
-  margin: 2.5rem 0 0 0;
 }
 
 .empty-note {
