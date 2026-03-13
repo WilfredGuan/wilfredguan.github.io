@@ -322,11 +322,6 @@ a:hover {
 }
 
 .category-title {
-  font-size: 0.7rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--text-dim);
   margin: 3rem 0 0 0;
 }
 
