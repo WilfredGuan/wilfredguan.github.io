@@ -13,7 +13,7 @@ title: Tech Artifacts
   {% assign grouped = sorted | group_by: 'category' %}
   {% for group in grouped %}
     {% if group.name != "" %}
-      <h2 class="category-title">{{ group.name }}</h2>
+      <h3 class="category-title">{{ group.name }}</h2>
     {% endif %}
     <ul class="content-list">
       {% for item in group.items %}
