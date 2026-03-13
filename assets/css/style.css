@@ -123,8 +123,8 @@ a:hover {
 
 .profile-photo {
   /* Adjust width/height here to control crop size */
-  width: 120px;
-  height: 160px;
+  width: 160px;
+  height: 200px;
   border-radius: 6px;
   object-fit: cover;
   object-position: center top;
@@ -133,8 +133,8 @@ a:hover {
 }
 
 .profile-photo-placeholder {
-  width: 120px;
-  height: 160px;
+  width: 160px;
+  height: 200px;
   border-radius: 6px;
   background: var(--bg-surface);
   border: 1px dashed var(--text-dim);
