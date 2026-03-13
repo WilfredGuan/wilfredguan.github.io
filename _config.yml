@@ -30,4 +30,5 @@ plugins:
 markdown: kramdown
 kramdown:
   input: GFM
+  hard_wrap: true
   syntax_highlighter: rouge
