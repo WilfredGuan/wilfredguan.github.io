@@ -1,6 +1,7 @@
 ---
 title: "Spring Rain"
 date: 2024-03-15
+category: "季节2"
 ---
 
 Rain falls on the city
