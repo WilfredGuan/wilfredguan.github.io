@@ -14,7 +14,7 @@
   --text-dim:    #656565;
   --accent:      #7eb8f7;
   --border:      #252525;
-  --max-width:   750px;
+  --max-width:   800px;
 }
 
 /* ── Base ── */
@@ -152,6 +152,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding-top: 0.25rem;
 }
 
 .profile-name {
