@@ -36,10 +36,13 @@ Front matter template:
 ---
 title: "Spring Rain"
 date: 2024-03-15
+category: "季节"
 ---
 
 Your poem here.
 ```
+
+`category` is optional. Poems with the same category are grouped under a shared heading in the directory. Poems without a category appear ungrouped.
 
 ---
 
@@ -57,10 +60,33 @@ Front matter template:
 ---
 title: "Notes on Distributed Systems"
 date: 2024-02-10
+category: "Systems"
 ---
 
 Your content here. Supports full Markdown including code blocks, headings, etc.
 ```
+
+`category` is optional. Artifacts with the same category are grouped under a shared heading in the directory. Artifacts without a category appear ungrouped.
+
+---
+
+### Inserting images in markdown
+
+**Step 1** — Place the image in `assets/images/`:
+
+```
+assets/images/my-photo.jpg
+```
+
+**Step 2** — Reference it in your markdown using an absolute path from the site root:
+
+```markdown
+![Alt text](/assets/images/my-photo.jpg)
+```
+
+Images are automatically styled (max-width 100%, rounded corners, border) via `.content-body img` in `style.css`.
+
+**Do not use relative paths** like `./my-photo.jpg` or `../assets/images/my-photo.jpg` — they will break due to Jekyll's URL structure.
 
 ---
 

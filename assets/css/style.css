@@ -306,6 +306,15 @@ a:hover {
   text-decoration: none;
 }
 
+.category-title {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+  margin: 2.5rem 0 0 0;
+}
+
 .empty-note {
   color: var(--text-dim);
   font-size: 0.875rem;
