@@ -321,13 +321,6 @@ a:hover {
   text-decoration: none;
 }
 
-.category-title {
-  margin: 3rem 0 0 0;
-}
-
-.category-title:first-child {
-  margin-top: 0;
-}
 
 .empty-note {
   color: var(--text-dim);
