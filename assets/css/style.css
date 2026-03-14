@@ -114,7 +114,7 @@ a:hover {
 /* ── Profile Section ── */
 .profile {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 2rem;
   margin-bottom: 3rem;
   padding-bottom: 3rem;
