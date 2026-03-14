@@ -152,7 +152,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-top: 0.05rem;
+  /* padding-top: 0.05rem; */
 }
 
 .profile-name {
@@ -456,6 +456,10 @@ a:hover {
   .content-item {
     flex-direction: column;
     gap: 0.15rem;
+  }
+
+  .content-body {
+    font-size: 0.78rem;
   }
 
   .item-date {

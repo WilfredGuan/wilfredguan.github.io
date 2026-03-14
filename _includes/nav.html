@@ -1,7 +1,7 @@
 <nav>
   <ul class="nav-links">
-    <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Main</a></li>
-    <li><a href="{{ '/poems/' | relative_url }}"{% if page.url contains '/poems' %} class="active"{% endif %}>Poems</a></li>
-    <li><a href="{{ '/tech-artifacts/' | relative_url }}"{% if page.url contains '/tech-artifacts' %} class="active"{% endif %}>Tech Artifacts</a></li>
+    <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Main 主页</a></li>
+    <li><a href="{{ '/poems/' | relative_url }}"{% if page.url contains '/poems' %} class="active"{% endif %}>Poems 诗艺</a></li>
+    <li><a href="{{ '/tech-artifacts/' | relative_url }}"{% if page.url contains '/tech-artifacts' %} class="active"{% endif %}>Tech Artifacts 技术产出</a></li>
   </ul>
 </nav>

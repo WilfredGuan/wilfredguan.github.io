@@ -8,17 +8,17 @@ Static personal website built with Jekyll, hosted on GitHub Pages.
 
 ### Naming convention
 
-Files must be named: **`YYYY-MM-DD-slug.md`**
+Files must be named: **`YYYY-MM-DD-title.md`**
 
 | Part | Format | Example |
 |------|--------|---------|
 | Date | `YYYY-MM-DD` | `2024-03-15` |
-| Slug | lowercase, hyphens only | `spring-rain` |
+| Title | the actual title, hyphens as spaces if needed | `spring-rain` or `花坛与我` |
 | Extension | `.md` | |
 
-Full example: `2024-03-15-spring-rain.md`
+Examples: `2024-03-15-spring-rain.md`, `2025-03-13-花坛与我.md`
 
-The date drives the sort order (newest first in the directory).
+The filename is the single source of truth — **no need to repeat `date` or `title` in front matter**. Jekyll derives both automatically from the filename. The date drives the sort order (newest first in the directory).
 
 ---
 
@@ -34,15 +34,13 @@ Front matter template:
 
 ```yaml
 ---
-title: "Spring Rain"
-date: 2024-03-15
 category: "季节"
 ---
 
 Your poem here.
 ```
 
-`category` is optional. Poems with the same category are grouped under a shared heading in the directory. Poems without a category appear ungrouped.
+`title` and `date` are derived automatically from the filename — do not repeat them. `category` is optional: poems with the same category are grouped under a shared heading in the directory. Poems without a category appear ungrouped.
 
 ---
 
@@ -58,15 +56,13 @@ Front matter template:
 
 ```yaml
 ---
-title: "Notes on Distributed Systems"
-date: 2024-02-10
 category: "Systems"
 ---
 
 Your content here. Supports full Markdown including code blocks, headings, etc.
 ```
 
-`category` is optional. Artifacts with the same category are grouped under a shared heading in the directory. Artifacts without a category appear ungrouped.
+`title` and `date` are derived automatically from the filename — do not repeat them. `category` is optional: artifacts with the same category are grouped under a shared heading in the directory. Artifacts without a category appear ungrouped.
 
 ---
 
