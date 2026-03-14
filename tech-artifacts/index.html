@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Tech Artifacts
+title: Tech Artifacts 技术产出
 ---
 
-<h1 class="page-title">Tech Artifacts</h1>
+<h1 class="page-title">Tech Artifacts 技术产出</h1>
 
 {% assign sorted = site.tech_artifacts | sort: 'date' | reverse %}
 
@@ -13,6 +13,7 @@ title: Tech Artifacts
   {% assign grouped = sorted | group_by: 'category' %}
   {% for group in grouped %}
     {% if group.name != "" %}
+      <br>
       <h3 class="category-title">{{ group.name }}</h3>
       <br>
     {% endif %}
