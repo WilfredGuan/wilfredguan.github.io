@@ -14,7 +14,7 @@
   --text-dim:    #656565;
   --accent:      #7eb8f7;
   --border:      #252525;
-  --max-width:   850px;
+  --max-width:   950px;
 }
 
 /* ── Base ── */
@@ -152,7 +152,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-top: 0.25rem;
+  padding-top: 0.05rem;
 }
 
 .profile-name {
@@ -460,5 +460,27 @@ a:hover {
 
   .item-date {
     min-width: unset;
+  }
+
+  .profile {
+    flex-direction: column;
+    /* 照片在上，文字在下 */
+    align-items: center;
+    /* 居中对齐 */
+  }
+
+  .profile-photo {
+    width: 120px;
+    height: 150px;
+  }
+
+  .profile-info {
+    text-align: center;
+    /* 文字居中 */
+  }
+
+  .contact-list {
+    align-items: center;
+    /* 联系方式也居中 */
   }
 }
