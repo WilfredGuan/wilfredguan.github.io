@@ -1,0 +1,210 @@
+---
+layout: null
+permalink: /roadmap/
+---
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="九月底至十月初，长白山—延吉五天四晚情侣自由行路书。">
+  <title>长白山 × 延吉｜五日秋日路书</title>
+  <style>
+    :root {
+      --ink: #243027;
+      --muted: #687269;
+      --paper: #f4f1e8;
+      --card: rgba(255,255,255,.64);
+      --line: rgba(36,48,39,.14);
+      --pine: #405f4b;
+      --maple: #b85335;
+      --gold: #c2923f;
+      --max: 920px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 8% 2%, rgba(194,146,63,.14), transparent 31rem),
+        radial-gradient(circle at 94% 18%, rgba(64,95,75,.12), transparent 27rem),
+        var(--paper);
+      font-family: ui-serif, "Songti SC", "Noto Serif SC", Georgia, serif;
+      line-height: 1.8;
+    }
+    a { color: inherit; }
+    .wrap { width: min(calc(100% - 36px), var(--max)); margin: auto; }
+    .hero { min-height: 70vh; display: grid; align-items: end; padding: 72px 0 58px; }
+    .eyebrow { font: 600 12px/1.4 system-ui, sans-serif; letter-spacing: .18em; color: var(--maple); text-transform: uppercase; }
+    h1 { max-width: 760px; margin: 18px 0; font-size: clamp(42px, 8vw, 82px); line-height: 1.03; letter-spacing: -.045em; font-weight: 600; }
+    .lead { max-width: 670px; margin: 0; color: var(--muted); font-size: clamp(17px, 2.4vw, 21px); }
+    .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
+    .chip { padding: 7px 12px; border: 1px solid var(--line); border-radius: 99px; font: 500 13px/1.4 system-ui, sans-serif; background: rgba(255,255,255,.38); }
+    .rule { border: 0; border-top: 1px solid var(--line); margin: 0; }
+    section { padding: 64px 0; }
+    .section-head { display: grid; grid-template-columns: 180px 1fr; gap: 24px; margin-bottom: 34px; }
+    .kicker { margin: 4px 0 0; color: var(--maple); font: 650 12px/1.4 system-ui, sans-serif; letter-spacing: .12em; text-transform: uppercase; }
+    h2 { margin: 0; font-size: clamp(27px, 4vw, 40px); line-height: 1.2; font-weight: 600; letter-spacing: -.025em; }
+    h3 { margin: 0 0 10px; font-size: 22px; line-height: 1.35; }
+    p { margin: 0 0 14px; }
+    .muted { color: var(--muted); }
+    .overview { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .card { padding: 22px; border: 1px solid var(--line); border-radius: 16px; background: var(--card); backdrop-filter: blur(10px); }
+    .metric { display: block; margin-bottom: 5px; color: var(--pine); font: 650 20px/1.3 system-ui, sans-serif; }
+    .metric-label { color: var(--muted); font: 13px/1.5 system-ui, sans-serif; }
+    .weather { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .temp { display: flex; align-items: baseline; gap: 10px; margin: 16px 0 8px; }
+    .temp strong { font: 650 clamp(32px, 5vw, 48px)/1 system-ui, sans-serif; letter-spacing: -.05em; }
+    .temp span { color: var(--muted); font: 13px/1.4 system-ui, sans-serif; }
+    .notice { margin-top: 18px; padding: 18px 20px; border-left: 3px solid var(--gold); background: rgba(194,146,63,.09); }
+    .days { display: grid; gap: 18px; }
+    .day { display: grid; grid-template-columns: 112px 1fr; gap: 28px; padding: 28px 0; border-top: 1px solid var(--line); }
+    .day:last-child { border-bottom: 1px solid var(--line); }
+    .day-no { color: var(--maple); font: 700 12px/1.4 system-ui, sans-serif; letter-spacing: .12em; text-transform: uppercase; }
+    .day-date { display: block; margin-top: 7px; color: var(--muted); font: 12px/1.5 system-ui, sans-serif; }
+    .timeline { list-style: none; padding: 0; margin: 20px 0 0; }
+    .timeline li { display: grid; grid-template-columns: 64px 1fr; gap: 14px; padding: 9px 0; }
+    .timeline time { color: var(--pine); font: 650 13px/1.6 system-ui, sans-serif; }
+    .timeline span { color: var(--muted); }
+    .choice { margin-top: 17px; padding: 14px 16px; border-radius: 10px; background: rgba(64,95,75,.08); font-size: 14px; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    ul { margin: 9px 0 0; padding-left: 1.2em; }
+    li { margin: 7px 0; }
+    .small { color: var(--muted); font: 13px/1.65 system-ui, sans-serif; }
+    .checklist { columns: 2; column-gap: 42px; }
+    footer { padding: 40px 0 60px; border-top: 1px solid var(--line); color: var(--muted); font: 12px/1.7 system-ui, sans-serif; }
+    @media (max-width: 680px) {
+      .hero { min-height: 62vh; padding-top: 50px; }
+      section { padding: 48px 0; }
+      .section-head, .day { grid-template-columns: 1fr; gap: 10px; }
+      .overview, .weather, .grid-2 { grid-template-columns: 1fr; }
+      .day { padding: 24px 0; }
+      .checklist { columns: 1; }
+      .timeline li { grid-template-columns: 56px 1fr; }
+    }
+    @media print {
+      body { background: white; }
+      .hero { min-height: auto; }
+      section { padding: 30px 0; }
+      .card { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Autumn Roadbook · 5 Days / 4 Nights</div>
+      <h1>长白山 × 延吉<br>五日秋日路书</h1>
+      <p class="lead">九月底至十月初，和喜欢的人慢慢走。只换一次酒店，留一天给天池的天气，也留几顿饭给延吉。</p>
+      <div class="chips">
+        <span class="chip">情侣自由行</span><span class="chip">不跟团</span><span class="chip">长白山北坡</span><span class="chip">二道白河 2 晚</span><span class="chip">延吉 2 晚</span>
+      </div>
+    </div>
+  </header>
+
+  <hr class="rule">
+  <main>
+    <section>
+      <div class="wrap">
+        <div class="section-head"><p class="kicker">Route</p><h2>一条不折腾的路线</h2></div>
+        <div class="overview">
+          <div class="card"><span class="metric">D1–D2</span><span class="metric-label">二道白河镇 · 长白山北坡</span></div>
+          <div class="card"><span class="metric">D3</span><span class="metric-label">慢上午 · 转场延吉</span></div>
+          <div class="card"><span class="metric">D4–D5</span><span class="metric-label">延吉生活 · 吃饭与散步</span></div>
+        </div>
+        <div class="notice"><strong>最舒服的进出方式：</strong>长白山进、延吉出。若航班方向相反，整条路线倒序即可。两地之间优先正规包车/拼车，通常约 2.5–3 小时；火车方案需以 12306 当日车次为准。</div>
+      </div>
+    </section>
+
+    <hr class="rule">
+    <section>
+      <div class="wrap">
+        <div class="section-head"><p class="kicker">Weather</p><h2>山下是深秋，山顶已接近冬天</h2></div>
+        <div class="weather">
+          <article class="card">
+            <h3>二道白河 / 延吉市区</h3>
+            <div class="temp"><strong>4–18℃</strong><span>常见日间范围</span></div>
+            <p class="muted">晴天中午体感温和，早晚通常只有个位数；降雨或冷空气到来时会更低。昼夜温差明显。</p>
+          </article>
+          <article class="card">
+            <h3>长白山主峰</h3>
+            <div class="temp"><strong>-5–8℃</strong><span>体感可能更低</span></div>
+            <p class="muted">海拔高、风大，九月底就可能遇到霜冻、雨夹雪或积雪。天气变化快，天池可能因大风、雾雪临时关闭。</p>
+          </article>
+        </div>
+        <p class="small" style="margin-top:14px">温度为多年气候和海拔差异下的行前参考，不是具体日期预报。出发前 3–5 天同时查看二道白河、延吉和长白山主峰预报。</p>
+      </div>
+    </section>
+
+    <hr class="rule">
+    <section>
+      <div class="wrap">
+        <div class="section-head"><p class="kicker">Scenery</p><h2>这一季真正值得看的颜色</h2></div>
+        <div class="grid-2">
+          <article class="card"><h3>混交林秋色</h3><p class="muted">岳桦、白桦、落叶松与红叶灌木叠在一起，颜色不是单一的红，而是金黄、橙红和深绿。一般九月下旬由高海拔向山下推进。</p></article>
+          <article class="card"><h3>初雪与秋叶同框</h3><p class="muted">主峰可能已经覆雪，山腰仍是彩林。它很漂亮，也意味着风寒强、路面可能湿滑，天池开放存在不确定性。</p></article>
+          <article class="card"><h3>二道白河慢秋</h3><p class="muted">美人松公园、河岸步道和小镇林荫道适合傍晚散步。无需购买项目，反而更能看到安静的秋日生活。</p></article>
+          <article class="card"><h3>延吉城市烟火</h3><p class="muted">这里的特色不是“大景区”，而是市场早餐、朝鲜族饮食、博物馆和布尔哈通河畔的晚风。</p></article>
+        </div>
+        <div class="notice"><strong>观叶时间不是固定日历。</strong>冷空气、降雨和海拔会让峰值提前或推后。九月底通常更有机会遇到山地彩林；十月初山顶可能落叶或见雪，但山下与延吉仍有秋色。</div>
+      </div>
+    </section>
+
+    <hr class="rule">
+    <section>
+      <div class="wrap">
+        <div class="section-head"><p class="kicker">Itinerary</p><h2>每天只安排一件“大事”</h2></div>
+        <div class="days">
+          <article class="day">
+            <div><span class="day-no">Day 1</span><span class="day-date">抵达 · 住二道白河</span></div>
+            <div><h3>落地之后，只散步</h3><p class="muted">入住二道白河镇中心，方便吃饭与叫车。下午走美人松公园、空中廊桥与河边步道；晚餐吃铁锅炖、山野菜或朝鲜族菜。</p><ul class="timeline"><li><time>下午</time><span>入住、补给、休息</span></li><li><time>傍晚</time><span>小镇河岸与美人松散步</span></li><li><time>晚上</time><span>早些吃饭，为次日留体力</span></li></ul></div>
+          </article>
+          <article class="day">
+            <div><span class="day-no">Day 2</span><span class="day-date">北景区 · 住二道白河</span></div>
+            <div><h3>长白山北坡一整天</h3><p class="muted">预约约 8:00–9:00 的时段。若主峰开放，入园后优先上天池，再走长白瀑布、聚龙温泉、绿渊潭；地下森林看体力决定，小天池可以舍弃。</p><ul class="timeline"><li><time>上午</time><span>集散中心 → 主峰天池</span></li><li><time>中午</time><span>长白瀑布与温泉区域，简单午餐</span></li><li><time>下午</time><span>绿渊潭；有余力再走地下森林</span></li><li><time>晚上</time><span>回镇吃饭或泡温泉，不安排夜游</span></li></ul><div class="choice">天池关闭时不要购买“特殊渠道”。天气面前没有免排队通道，把森林和瀑布看舒服即可。</div></div>
+          </article>
+          <article class="day">
+            <div><span class="day-no">Day 3</span><span class="day-date">转场 · 住延吉</span></div>
+            <div><h3>给天气留半天，再去延吉</h3><p class="muted">前一天顺利看到天池，就睡到自然醒、逛市场或喝咖啡；若主峰关闭且当天恢复，可把上午作为机动时间。午后前往延吉，入住延边大学—公园路一带。</p><ul class="timeline"><li><time>上午</time><span>自由活动 / 天气机动</span></li><li><time>午后</time><span>二道白河 → 延吉，约半天转场</span></li><li><time>晚上</time><span>延吉第一顿烤肉；大学城随意走走</span></li></ul></div>
+          </article>
+          <article class="day">
+            <div><span class="day-no">Day 4</span><span class="day-date">城市生活 · 住延吉</span></div>
+            <div><h3>早市、博物馆与一场日落</h3><p class="muted">早点去水上市场吃早餐，7 点后部分摊位陆续收摊。回酒店补觉，下午参观延边博物馆；天气舒服则傍晚去帽儿山散步，无需执着登顶。</p><ul class="timeline"><li><time>06:30</time><span>水上市场：汤饭、米肠、打糕</span></li><li><time>上午</time><span>回笼觉与咖啡时间</span></li><li><time>下午</time><span>延边博物馆（提前核对开放日）</span></li><li><time>傍晚</time><span>帽儿山或布尔哈通河边散步</span></li></ul></div>
+          </article>
+          <article class="day">
+            <div><span class="day-no">Day 5</span><span class="day-date">返程 · 延吉</span></div>
+            <div><h3>最后一顿冷面，然后回家</h3><p class="muted">按航班倒推时间。西市场买泡菜、明太鱼等伴手礼，再吃一顿冷面或汤饭。若是晚班机，加入人民公园或河边散步即可，不再塞图们、珲春等跨城行程。</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <hr class="rule">
+    <section>
+      <div class="wrap">
+        <div class="section-head"><p class="kicker">Practical</p><h2>订票、住宿与国庆提醒</h2></div>
+        <div class="grid-2">
+          <article class="card"><h3>住哪里</h3><ul><li>二道白河：镇中心或长白山站接送方便的位置</li><li>延吉：延边大学—公园路附近，步行吃饭方便</li><li>连续住两晚，不为“景观酒店”频繁搬行李</li></ul></article>
+          <article class="card"><h3>提前订什么</h3><ul><li>长白山门票、环保车及主峰相关票项，以官方预约渠道为准</li><li>延边博物馆预约与开放日</li><li>二道白河至延吉的正规包车/车票</li></ul></article>
+          <article class="card"><h3>十一客流</h3><ul><li>9 月 30 日至 10 月 7 日通常是全年高峰之一</li><li>住宿和交通尽早锁定可取消方案</li><li>景区预约开放后尽快购买，别依赖现场余票</li></ul></article>
+          <article class="card"><h3>不要硬塞</h3><ul><li>北坡、西坡同时打卡</li><li>一天往返延吉与长白山</li><li>雪岭、漂流、魔界等一串同质项目</li><li>图们、珲春、龙井一天三城</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <hr class="rule">
+    <section>
+      <div class="wrap">
+        <div class="section-head"><p class="kicker">Packing</p><h2>用分层穿衣应对两个季节</h2></div>
+        <div class="card checklist">
+          <ul><li>速干或保暖内层</li><li>抓绒 / 薄羽绒中层</li><li>防风防水外套</li><li>长裤与备用袜子</li><li>防滑、走路舒服的鞋</li><li>薄手套与帽子</li><li>雨衣（比雨伞适合山顶）</li><li>保温杯与充电宝</li><li>润唇膏、防晒与常用药</li><li>小背包，不带大件行李进山</li></ul>
+        </div>
+        <p class="small" style="margin-top:14px">山下晴天可能穿衬衫，主峰同一天却需要羽绒服。避免只看延吉市区温度准备衣物。</p>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap">长白山—延吉五日路书 · 行程按九月底至十月初设计。景区开放、票价、班次与天气变化较快，请在出发前通过长白山官方渠道、12306 和气象预报再次核对。</div></footer>
+</body>
+</html>
