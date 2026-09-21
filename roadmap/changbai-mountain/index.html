@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="2026 年 9 月 28 日至 10 月 2 日长白山—延吉行程安排。">
+  <title>长白山 × 延吉｜9.28–10.2 行程</title>
+  <style>
+    :root {
+      --ink: #243027;
+      --muted: #687269;
+      --paper: #f4f1e8;
+      --card: rgba(255,255,255,.64);
+      --line: rgba(36,48,39,.14);
+      --pine: #405f4b;
+      --maple: #b85335;
+      --gold: #c2923f;
+      --max: 920px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 8% 2%, rgba(194,146,63,.14), transparent 31rem),
+        radial-gradient(circle at 94% 18%, rgba(64,95,75,.12), transparent 27rem),
+        var(--paper);
+      font-family: ui-serif, "Songti SC", "Noto Serif SC", Georgia, serif;
+      line-height: 1.8;
+    }
+    a { color: inherit; }
+    .wrap { width: min(calc(100% - 36px), var(--max)); margin: auto; }
+    .hero { min-height: 52vh; display: grid; align-items: end; padding: 72px 0 58px; }
+    .eyebrow { font: 600 12px/1.4 system-ui, sans-serif; letter-spacing: .18em; color: var(--maple); text-transform: uppercase; }
+    h1 { max-width: 760px; margin: 18px 0; font-size: clamp(42px, 8vw, 82px); line-height: 1.03; letter-spacing: -.045em; font-weight: 600; }
+    .lead { max-width: 670px; margin: 0; color: var(--muted); font-size: clamp(17px, 2.4vw, 21px); }
+    .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
+    .chip { padding: 7px 12px; border: 1px solid var(--line); border-radius: 99px; font: 500 13px/1.4 system-ui, sans-serif; background: rgba(255,255,255,.38); }
+    .rule { border: 0; border-top: 1px solid var(--line); margin: 0; }
+    section { padding: 64px 0; }
+    .section-head { display: grid; grid-template-columns: 180px 1fr; gap: 24px; margin-bottom: 34px; }
+    .kicker { margin: 4px 0 0; color: var(--maple); font: 650 12px/1.4 system-ui, sans-serif; letter-spacing: .12em; text-transform: uppercase; }
+    h2 { margin: 0; font-size: clamp(27px, 4vw, 40px); line-height: 1.2; font-weight: 600; letter-spacing: -.025em; }
+    h3 { margin: 0 0 10px; font-size: 22px; line-height: 1.35; }
+    p { margin: 0 0 14px; }
+    .muted { color: var(--muted); }
+    .overview { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .card { padding: 22px; border: 1px solid var(--line); border-radius: 16px; background: var(--card); backdrop-filter: blur(10px); }
+    .metric { display: block; margin-bottom: 5px; color: var(--pine); font: 650 20px/1.3 system-ui, sans-serif; }
+    .metric-label { color: var(--muted); font: 13px/1.5 system-ui, sans-serif; }
+    .weather { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .temp { display: flex; align-items: baseline; gap: 10px; margin: 16px 0 8px; }
+    .temp strong { font: 650 clamp(32px, 5vw, 48px)/1 system-ui, sans-serif; letter-spacing: -.05em; }
+    .temp span { color: var(--muted); font: 13px/1.4 system-ui, sans-serif; }
+    .notice { margin-top: 18px; padding: 18px 20px; border-left: 3px solid var(--gold); background: rgba(194,146,63,.09); }
+    .days { display: grid; gap: 18px; }
+    .day { display: grid; grid-template-columns: 112px 1fr; gap: 28px; padding: 28px 0; border-top: 1px solid var(--line); }
+    .day:last-child { border-bottom: 1px solid var(--line); }
+    .day-no { color: var(--maple); font: 700 12px/1.4 system-ui, sans-serif; letter-spacing: .12em; text-transform: uppercase; }
+    .day-date { display: block; margin-top: 7px; color: var(--muted); font: 12px/1.5 system-ui, sans-serif; }
+    .timeline { list-style: none; padding: 0; margin: 20px 0 0; }
+    .timeline li { display: grid; grid-template-columns: 112px 1fr; gap: 14px; padding: 9px 0; }
+    .timeline time { color: var(--pine); font: 650 13px/1.6 system-ui, sans-serif; }
+    .timeline span { color: var(--muted); }
+    .choice { margin-top: 17px; padding: 14px 16px; border-radius: 10px; background: rgba(64,95,75,.08); font-size: 14px; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    ul { margin: 9px 0 0; padding-left: 1.2em; }
+    li { margin: 7px 0; }
+    .small { color: var(--muted); font: 13px/1.65 system-ui, sans-serif; }
+    .checklist { columns: 2; column-gap: 42px; }
+    footer { padding: 40px 0 60px; border-top: 1px solid var(--line); color: var(--muted); font: 12px/1.7 system-ui, sans-serif; }
+    @media (max-width: 680px) {
+      .hero { min-height: 46vh; padding-top: 50px; }
+      section { padding: 48px 0; }
+      .section-head, .day { grid-template-columns: 1fr; gap: 10px; }
+      .overview, .weather, .grid-2 { grid-template-columns: 1fr; }
+      .day { padding: 24px 0; }
+      .checklist { columns: 1; }
+      .timeline li { grid-template-columns: 104px 1fr; }
+    }
+    @media print {
+      body { background: white; }
+      .hero { min-height: auto; }
+      section { padding: 30px 0; }
+      .card { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow">2026.09.28 — 10.02</div>
+      <h1>长白山 × 延吉<br>五日行程</h1>
+      <div class="chips">
+        <span class="chip">长白山北坡</span><span class="chip">金水鹤酒店</span><span class="chip">皇冠假日酒店</span><span class="chip">如家酒店NEO 2 晚</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="wrap">
+        <div class="section-head"><p class="kicker">Itinerary</p><h2>每日安排</h2></div>
+        <div class="days">
+          <article class="day">
+            <div><span class="day-no">Day 1</span><span class="day-date">9 月 28 日 · 入住金水鹤酒店</span></div>
+            <div><h3>抵达长白山，晚上在镇上散步</h3><ul class="timeline"><li><time>09:00–11:50</time><span>乘坐 CZ5469，从杭州萧山机场飞往长春龙嘉机场</span></li><li><time>11:50–14:07</time><span>取行李、简单吃午饭，然后步行前往与机场相连的龙嘉站；中间预留了 2 小时 17 分</span></li><li><time>14:07–16:21</time><span>乘坐 C1333，从龙嘉站前往长白山站</span></li><li><time>傍晚</time><span>由金水鹤酒店安排接站；办理入住后，在镇中心吃晚饭</span></li><li><time>晚上</time><span>散步地点三选一：首选美人松空中廊桥，也可以去美人松公园或二道白河河岸</span></li></ul><div class="choice"><strong>当天需要确认：</strong>提前将 C1333 的到站时间告知金水鹤酒店，并确认接站地点和联系电话。当地早晚气温可能低于 10℃，建议把外套放在随身行李中。</div></div>
+          </article>
+          <article class="day">
+            <div><span class="day-no">Day 2</span><span class="day-date">9 月 29 日 · 入住长白山温泉皇冠假日酒店</span></div>
+            <div><h3>全天只安排长白山北坡</h3><ul class="timeline"><li><time>早上</time><span>从金水鹤酒店退房，前往皇冠假日酒店寄存行李</span></li><li><time>上午</time><span>按照酒店确认的住客通道和接驳安排进入景区；如果主峰开放，先去天池</span></li><li><time>中午</time><span>游览长白瀑布和聚龙温泉一带，并在景区内简单吃午饭</span></li><li><time>下午</time><span>前往绿渊潭；如果时间和体力都充足，再去地下森林，小天池可以不去</span></li><li><time>晚上</time><span>入住皇冠假日酒店并泡温泉，晚上不再外出游览</span></li></ul><div class="choice"><strong>当天需要确认：</strong>酒店的快速入园服务不能保证天池开放，也不一定包含景区门票、环保车和前往主峰的越野车票，需要向酒店逐项确认。山顶气温可能在 -5℃至 8℃之间，风也比较大，建议准备薄羽绒服或抓绒衣、防风防水外套、帽子和手套，并在出发前 3 至 5 天查看最新天气预报。</div></div>
+          </article>
+          <article class="day">
+            <div><span class="day-no">Day 3</span><span class="day-date">9 月 30 日 · 入住延吉如家酒店NEO</span></div>
+            <div><h3>上午休息，下午前往延吉</h3><ul class="timeline"><li><time>上午</time><span>悠闲地吃完早餐；如果想再泡一次温泉，可以在退房前安排</span></li><li><time>中午</time><span>乘坐皇冠假日酒店提前安排的送站车辆前往长白山站</span></li><li><time>13:36–15:16</time><span>乘坐 G127，从长白山站前往延吉西站（目前仍在候补）</span></li><li><time>下午</time><span>从延吉西站打车前往如家酒店NEO（延吉延边大学西市场店），办理入住后休息</span></li><li><time>晚上</time><span>在延吉吃一顿烤肉，饭后到大学城附近散步</span></li></ul><div class="choice"><strong>当天需要确认：</strong>请皇冠假日酒店根据 G127 的发车时间安排送站。车票候补成功前，这趟车还没有最终确定；留意 12306 的通知，同时保留当天下午其他车次作为备选。</div></div>
+          </article>
+          <article class="day">
+            <div><span class="day-no">Day 4</span><span class="day-date">10 月 1 日 · 延吉市内游览</span></div>
+            <div><h3>逛早市，充分休息，再安排一次散步</h3><ul class="timeline"><li><time>06:30</time><span>到水上市场吃早餐，可以尝试汤饭、米肠和打糕；上午 7 点后，部分摊位会陆续收摊</span></li><li><time>上午</time><span>回酒店补觉，睡醒后可以找一家咖啡馆休息</span></li><li><time>下午</time><span>参观延边博物馆；出发前确认国庆期间的开放时间并完成预约</span></li><li><time>傍晚</time><span>天气合适就去帽儿山散步；如果不想爬山，可以改去布尔哈通河边</span></li><li><time>晚上</time><span>根据喜好选择冷面、参鸡汤或其他朝鲜族料理</span></li></ul><div class="choice"><strong>当天的取舍：</strong>不再加入图们、珲春或龙井等跨城行程。国庆期间游客较多，用餐尽量避开高峰时段。</div></div>
+          </article>
+          <article class="day">
+            <div><span class="day-no">Day 5</span><span class="day-date">10 月 2 日 · 延吉西 → 龙嘉 → 杭州</span></div>
+            <div><h3>上午在延吉收尾，下午返程</h3><ul class="timeline"><li><time>上午</time><span>从如家酒店NEO步行前往西市场，购买泡菜、明太鱼等伴手礼，再吃一顿冷面或汤饭</span></li><li><time>午后</time><span>回酒店取行李，提前前往延吉西站</span></li><li><time>14:06–16:14</time><span>乘坐 C1020，从延吉西站前往龙嘉站</span></li><li><time>16:14–18:50</time><span>从龙嘉站步行进入机场，办理值机和安检；中间预留了 2 小时 36 分</span></li><li><time>18:50–22:00</time><span>乘坐 MF8070，从长春龙嘉机场飞往杭州萧山机场</span></li></ul><div class="choice"><strong>当天需要注意：</strong>火车票和机票并非联程票，如果 C1020 出现明显延误，应尽早联系航空公司。泡菜等含有液体的伴手礼需要按照航空公司的托运规定包装。</div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer><div class="wrap">列车班次、景区开放情况和天气都可能发生变化，出发前请通过 12306、航空公司和长白山官方渠道再次确认。</div></footer>
+</body>
+</html>
